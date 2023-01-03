@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MenuModalitaActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="290dp"
+        android:layout_height="305dp"
+        android:layout_marginBottom="445dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_bello" />
+
+    <TextView
+        android:id="@+id/txttitleDurata"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Difficoltà"
+        android:textAlignment="center"
+        android:textColor="#3DD8FC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLinea"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/btnDurataPost"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="72dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtDurataGioco" />
+
+    <Button
+        android:id="@+id/btnCiviliWar"
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="458dp"
+        android:background="?attr/colorControlHighlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgCivilWar"
+        android:layout_width="106dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="spinwheel.json"
+        app:lottie_loop="true"
+        app:layout_constraintEnd_toEndOf="@+id/btnCiviliWar"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="@+id/btnCiviliWar"
+        app:layout_constraintTop_toTopOf="@+id/btnCiviliWar"
+        />
+
+    <Button
+        android:id="@+id/btnLastMan"
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="210dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/goBack"
+        android:layout_width="219dp"
+        android:layout_height="210dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="572dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="go_back.json"
+        app:lottie_loop="true" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="←" />
+
+    <TextView
+        android:id="@+id/txtLinea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:text="@string/divisore"
+        android:textColor="#F41DA1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRedHot"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <TextView
+        android:id="@+id/txtLinea2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:text="@string/divisore"
+        android:textColor="#F41DA1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLinea3" />
+
+    <TextView
+        android:id="@+id/txtLinea3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:text="@string/divisore"
+        android:textColor="#F41DA1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRedHot"
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="334dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtm2"
+        android:layout_width="253dp"
+        android:layout_height="88dp"
+
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/selection_box"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRedHot"
+        app:layout_constraintEnd_toEndOf="@+id/btnRedHot"
+        app:layout_constraintTop_toTopOf="@+id/btnRedHot"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <TextView
+        android:id="@+id/txtDescriptionHot"
+        android:layout_width="238dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:lineSpacingExtra="0sp"
+        android:text="Cercate una serata di fuoco e le domande piccanti della prima modalità non vi hanno soddisfatto? Questo è il posto giusto per voi"
+        android:textColor="#1C88A1"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtm2"
+        app:layout_constraintEnd_toEndOf="@+id/txtm2"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/txtm2" />
+
+    <TextView
+        android:id="@+id/txtTitleRedHot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Red Hot Chili Peppers"
+        android:textColor="#F41DA1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtm2"
+        app:layout_constraintEnd_toEndOf="@+id/txtm2"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="@+id/txtm2"
+        app:layout_constraintTop_toTopOf="@+id/txtm2"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TextView
+        android:id="@+id/txtm3"
+        android:layout_width="253dp"
+        android:layout_height="88dp"
+        android:background="@drawable/selection_box"
+        app:layout_constraintBottom_toTopOf="@+id/txtLinea"
+        app:layout_constraintStart_toEndOf="@+id/imgCivilWar"
+        app:layout_constraintTop_toTopOf="@+id/btnCiviliWar"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <ImageView
+        android:id="@+id/imgRedHot"
+        android:layout_width="106dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/btnRedHot"
+        app:layout_constraintTop_toTopOf="@+id/btnRedHot"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <ImageView
+        android:id="@+id/imgLastMan"
+        android:layout_width="106dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLastMan"
+        app:layout_constraintEnd_toEndOf="@+id/btnLastMan"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="@+id/btnLastMan"
+        app:layout_constraintTop_toTopOf="@+id/btnLastMan"
+        app:layout_constraintVertical_bias="0.473"
+        app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:id="@+id/txtm1"
+        android:layout_width="253dp"
+        android:layout_height="88dp"
+        android:background="@drawable/selection_box"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLastMan"
+
+        app:layout_constraintEnd_toEndOf="@+id/btnLastMan"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toEndOf="@+id/imgLastMan"
+        app:layout_constraintTop_toTopOf="@+id/btnLastMan"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/txtTitleCivilWar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Civil War"
+        android:textColor="#F41DA1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtm3"
+        app:layout_constraintEnd_toEndOf="@+id/txtm3"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/txtm3"
+        app:layout_constraintTop_toTopOf="@+id/txtm3"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/txtTitleLastMan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="The Last Man Standing"
+        android:textColor="#F41DA1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtm1"
+        app:layout_constraintEnd_toEndOf="@+id/txtm1"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/txtm1"
+        app:layout_constraintTop_toTopOf="@+id/txtm1"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/txtDurataGioco"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="normal"
+        android:textAlignment="center"
+        android:textColor="#723DD8FC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLinea"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/txtDescription1"
+        android:layout_width="238dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:lineSpacingExtra="0sp"
+        android:text="Preparate  i  vostri  fegati  per  un  preserata  al  limite,  questa  modalità  vi  porterà  al  confine  tra  l'essere  brilli  e  la  sbronza  e  ricordate,  ne  rimarrà  soltanto  uno!"
+        android:textColor="#1C88A1"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtm1"
+        app:layout_constraintEnd_toEndOf="@+id/txtm1"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="@+id/txtm1" />
+
+    <TextView
+        android:id="@+id/txtDescriptionCivil"
+        android:layout_width="234dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:lineSpacingExtra="0sp"
+        android:text="Non  si  fanno  prigionieri,  siete  voi  contro  loro  e  non  vorrete  essere  dal  lato  dei  perdenti quando  la  sfida  sarà  finita,  qualche  amicizia  potrebbe  infrangersi"
+        android:textColor="#1C88A1"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtm3"
+        app:layout_constraintEnd_toEndOf="@+id/txtm3"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="@+id/txtm3"
+        app:layout_constraintTop_toTopOf="@+id/txtm3" />
+
+    <Button
+        android:id="@+id/btnDurataPre"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="75dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtDurataGioco"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationLMS"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLastMan"
+        app:layout_constraintEnd_toEndOf="@+id/imgLastMan"
+        app:layout_constraintStart_toStartOf="@+id/imgLastMan"
+        app:layout_constraintTop_toTopOf="@+id/imgLastMan"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="LMSREAL.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationRHCP"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRedHot"
+        app:layout_constraintEnd_toEndOf="@+id/imgRedHot"
+        app:layout_constraintStart_toStartOf="@+id/imgRedHot"
+        app:layout_constraintTop_toTopOf="@+id/imgRedHot"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="RHCP.json"
+        app:lottie_loop="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtDurataGioco"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pre" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="51dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toEndOf="@+id/txtDurataGioco"
+        app:srcCompat="@drawable/post" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

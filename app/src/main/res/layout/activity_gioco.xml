@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".GiocoActivity">
+
+    <Button
+        android:id="@+id/btnAvanti"
+        android:layout_width="0dp"
+        android:layout_height="654dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+        android:text="x"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        tools:text="x" />
+
+    <TextView
+        android:id="@+id/txtTestoDomanda"
+        android:layout_width="286dp"
+        android:layout_height="579dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal|center_vertical"
+        android:scrollbars="vertical"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#F3D5AC"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAvanti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAvanti" />
+
+    <TextView
+        android:id="@+id/txtTitoloDomanda"
+        android:layout_width="326dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Titolo"
+        android:textAlignment="center"
+        android:textColor="#FF9100"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFineJolly"
+        android:layout_width="281dp"
+        android:layout_height="171dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:rotation="30"
+        android:text="FINE"
+        android:textColor="#FF0000"
+        android:textSize="80sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitoloDomanda"
+        app:layout_constraintVertical_bias="0.18" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

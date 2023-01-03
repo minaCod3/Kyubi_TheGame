@@ -1,0 +1,41 @@
+GIN TONIC
+	gin, acqua tonica
+
+GIN LEMON
+	gin, lemon soda
+
+VODKA LEMON
+	vodka (liscia, pesca, mela verde), lemon soda
+
+MALIBU COLA
+	mailbù, coca cola (1:2)
+
+HAVANA COLA
+	havana rum, coca cola (1:3)
+
+SCREWDRIVER
+	vodka, succo arancia (1:2)
+
+CUBA LIBRE
+    rum (bacardi, havana),cola (1:2) + spruzzata di succo di limone o lime,
+
+SEX ON THE BEACH
+	vodka, vodka pesca, succo arancia, succo ananas circa egual misura + fetta limone
+
+VODKA MARTINI
+	3/4 vodka, 1/4 vermut dry + fetta limone
+
+NEGRONI CLASSICO
+	1/3 gin, 1/3 martini rosso, 1/3 campari + fetta arancia
+
+AMERICANO
+	metà campari, metà vermuth rosso, un goccio di soda
+
+MARGARITA
+	metà tequila, 1/4 cointreau, 1/4 succo limone, fetta di lime e sale sul bordo del bicchiere
+
+MAVOMA
+	2/4 malibu, 1/4 vodka pesca, 1/4 martini
+
+
+

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kyubi</string>
+    <string name="DavidelinkToInstagram">
+        <a href="https://www.instagram.com/davide.minatel/"> @davide.minatel</a>
+    </string>
+    <string name="DevidlinkToInstagram">
+        <a href="https://www.instagram.com/devid_rosa_/"> @devid_rosa_</a>
+    </string>
+    <string name="divisore">______________________________________</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:foregroundTint="@android:color/background_light"
+    android:splitMotionEvents="true">
+
+    <Button
+        android:id="@+id/btnAnnulla"
+        android:layout_width="263dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="annulla"
+        android:textColor="#3dd8fc"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnElimina"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnElimina"
+        android:layout_width="240dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/quicksand_medium"
+        android:includeFontPadding="false"
+        android:text="Elimina"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="313dp"
+        android:layout_height="279dp"
+        android:layout_marginBottom="488dp"
+        android:contentDescription="@android:string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/elimina" />
+
+    <ListView
+        android:id="@+id/lstFemale"
+        android:layout_width="180dp"
+        android:layout_height="322dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:choiceMode="multipleChoice"
+        app:layout_constraintBottom_toTopOf="@+id/btnElimina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toEndOf="@+id/lsvMale"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/lsvMale"
+        android:layout_width="180dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:choiceMode="multipleChoice"
+        app:layout_constraintBottom_toTopOf="@+id/btnElimina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

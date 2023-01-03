@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".PreGiocoActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="332dp"
+        android:layout_height="368dp"
+        android:layout_marginBottom="384dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_bello" />
+
+    <Button
+        android:id="@+id/btnEliminaGiocatori"
+        android:layout_width="263dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="elimina giocatori"
+        android:textColor="#3dd8fc"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnInfoF"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/secondry_button_female"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="i"
+        android:textAllCaps="false"
+        android:textColor="#E907F1"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="i" />
+
+    <TextView
+        android:id="@+id/txtF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="0"
+        android:textColor="#E907F1"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtInstaRosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/DevidlinkToInstagram"
+        android:textColor="#F41DA1"
+        android:textColorHighlight="@android:color/transparent"
+        android:textColorLink="#3DD8FC"
+        android:textCursorDrawable="@drawable/gradient_button"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLinea"
+        app:layout_constraintVertical_bias="0.522"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtInstaMina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/DavidelinkToInstagram"
+        android:textAllCaps="false"
+        android:textColor="#F41DA1"
+        android:textColorHighlight="@android:color/transparent"
+        android:textColorLink="#3DD8FC"
+        android:textCursorDrawable="@drawable/gradient_button"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLinea"
+        app:layout_constraintVertical_bias="0.209"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtLinea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:text="@string/divisore"
+        android:textColor="#F41DA1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsigli"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="←" />
+
+    <TextView
+        android:id="@+id/txtBoxAddPlayer"
+        android:layout_width="372dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="280dp"
+        android:background="@drawable/insert_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNamePlayer"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/quicksand_medium"
+        android:hint="Aggiungi un giocatore"
+        android:inputType="textPersonName"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintTop_toTopOf="@+id/txtBoxAddPlayer" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+        android:text="Go!"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toEndOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintVertical_bias="0.523"
+        tools:text="Go!" />
+
+    <Button
+        android:id="@+id/btnAddPlayer"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/circular_button"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+        android:text="+"
+
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toEndOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintTop_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintVertical_bias="0.444"
+        tools:text="+" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupMF"
+        android:layout_width="81dp"
+
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toEndOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintTop_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintVertical_bias="0.38">
+
+        <RadioButton
+            android:id="@+id/rdbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="M"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555" />
+
+        <RadioButton
+            android:id="@+id/rdbFemale"
+            android:layout_width="37dp"
+            android:layout_height="32dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="F"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="0"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnInfoM"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/secondary_button_male"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="i"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="10sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtM"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="i" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/goBack"
+        android:layout_width="219dp"
+        android:layout_height="210dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="592dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="go_back.json"
+        app:lottie_loop="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/txtM"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891"
+        app:srcCompat="@drawable/male" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="55dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBoxAddPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/txtF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89"
+        app:srcCompat="@drawable/female" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
